@@ -32,5 +32,14 @@
   "description": "El más veloz",
   "imagenProducto": "",
   "image": "imagenProducto-1649451079271"
+ },
+ {
+  "id": "71111111",
+  "name": "carro de muuucho lujo",
+  "price": "98798987987",
+  "category": "lujazo",
+  "description": "Deluxe!",
+  "imagenProducto": "",
+  "image": "imagenProducto-1649455466196"
  }
 ]
