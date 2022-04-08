@@ -10,42 +10,51 @@
     <link rel="stylesheet" href="/stylesheets/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
-    <title>Product details</title>
+    <title>Crear producto</title>
 </head>
 
 <body>
 
-    <form action="/products/store" method="post" enctype="multipart/form-data">
+    <header class="header">
+        <%- include('partials/header.ejs') %>
+    </header>
+    <main class="formulario">
+        <form action="/products/store" method="post" enctype="multipart/form-data">
+            <section class="menu">
 
-        <label for="nombre">Nombre del producto</label>
-        <input type="text" name="name" id="name">
-        <br>
+                <h2>Crea un producto</h2>
 
-        <div>
-            <label for="price">Precio</label>
-            <input type="number" id="price" name="price">
-        </div>
-        <br>
+                <div class="clase1">
+                    <input class="casilla" type="text" name="name" id="name" placeholder="Nombre del producto">
+                </div>
 
-        <label for="category">Categoria</label>
-        <input type="text" name="category" id="category">
-        <br>
+                <div class="clase1">
+                    <input class="casilla" type="number" id="price" name="price" placeholder="precio">
+                </div>
 
-        <div>
-            <label for="description">Description</label>
-            <input type="text" id="description" name="description">
-        </div>
-        <br>
+                <div class="clase1">
+                    <input class="casilla" type="text" name="category" id="category" placeholder="Categoría">
+                </div>
 
-        <div>
-            <label for="">Imagen</label>
-            <input type="file" accept=".png,.jpg" name="imagenProducto">
-        </div>
-
-        <button type="submit" class="buy-now-button">Guardar producto</button>
+                <div class="clase1">
+                    <input class="casilla" type="text" id="description" name="description" placeholder="Descripción">
+                </div>
 
 
-    </form>
+                <div class="clase1">
+                    <input class="casilla" type="file" accept=".png,.jpg" name="imagenProducto" placeholder="Imagen">
+                </div>
+
+                <button class="boton2" type="submit" class="buy-now-button">Guardar producto</button>
+
+            </section>
+
+        </form>
+    </main>
+    <footer>
+        <%- include('partials/footer.ejs') %>
+
+    </footer>
 
 </body>
 
