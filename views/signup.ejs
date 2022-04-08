@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <title>Registro</title>
+</head>
+
+<body>
+    <header class="header">
+        <%- include('partials/header.ejs') %>
+    </header>
+    <main class="formulario">
+        <form action="/users/signup" method="post" enctype="multipart/form-data">
+
+            <section class="menu">
+
+                <h2>Regístrate</h2>
+
+                <div class="clase1">
+                    <input class="casilla" type="text" name="name" id="name" placeholder="Ingrese su nombre">
+                </div>
+
+
+                <div class="clase1">
+                    <input type="text" id="Apellido" name="Apellido" placeholder="Ingrese su Apellido">
+                </div>
+
+
+                <div class="clase1">
+                    <input type="email" name="email" id="email" placeholder="Ingrese su E-mail">
+                </div>
+
+                <div class="clase1">
+                    <input type="password" id="constrasena" name="constrasena" placeholder="Contraseña">
+                </div>
+
+
+                <div class="clase1">
+                    <input type="file" accept=".png,.jpg" name="imagenUsuario" id="imagenUsuario"
+                        placeholder="Suba su foto">
+                </div>
+
+                <button type="submit" class="boton2">Registrarse</button>
+
+            </section>
+        </form>
+    </main>
+    <footer>
+        <%- include('partials/footer.ejs') %>
+
+    </footer>
+
+</body>
+
+</html>
