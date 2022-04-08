@@ -66,7 +66,8 @@ const controller = {
         products[idn] = { //accedemos al producto del índice "n"
             id,
             ...req.body, //copia todo del body
-            // image: products[idn].image
+            image: products[idn].image
+            // image: req.file.filename
         }
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' ')) //no se crea una nueva variable sino que se actualiza con la nueva información nueva, todo está en esta línea
         res.redirect("/products/detail/" + id) //redirigimos a este path
@@ -89,4 +90,3 @@ const controller = {
 };
 
 module.exports = controller;
-

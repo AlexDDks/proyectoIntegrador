@@ -1,1 +1,27 @@
-[{"id":7,"name":"Auto 7","price":1,"category":"cayenne","description":"descripción","image":"porsche-nineeleven-one.png"},{"id":8,"name":"Manuel Alejandro","price":"78","category":"Lujo","description":"9","image":"imagenProducto-1649034374948"},{"id":9,"name":"Manuel Alejandro","price":"78","category":"i","description":"Un bocho bonito y antaño","image":"imagenProducto-1649034414263"},{"id":10,"name":"bochido2","price":"1000","category":"i","description":"bOCHIDO DE LUISITO COMUNICA 8 abril","image":"imagenProducto-1649453557322"}]
+[
+ {
+  "id": "7"
+ },
+ {
+  "id": "8"
+ },
+ {
+  "id": "9",
+  "name": "Manuel Alejandro",
+  "price": "78",
+  "description": "jojo"
+ },
+ {
+  "id": "10",
+  "name": "bochido2_editado",
+  "price": "1000",
+  "description": "bOCHIDO DE LUISITO COMUNICA 8 abril"
+ },
+ {
+  "id": "101",
+  "name": "carro prueabb",
+  "price": "100bb",
+  "description": "asasabb",
+  "image": "imagenProducto-1649454476663"
+ }
+]
