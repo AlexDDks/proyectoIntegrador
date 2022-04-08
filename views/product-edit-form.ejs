@@ -14,51 +14,52 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+
+    <header class="header">
         <%- include('partials/header.ejs') %>
-    </header> -->
+    </header>
 
-    <div class="container products-wrapper">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="products-title">Estás editando: <i>
-                        <%= product.name %>
-                    </i></h2>
-            </div>
-        </div>
-        <div class="col-12">
+    <main class="formulario">
 
-            <!-- Si bien se envía como post, se le aclara en el action que viajará por PUT -->
+        <%= product.name %>
+
             <form action="/products/edit/<%= product.id %>?_method=PUT" method="POST">
-                <div class="row product-detail">
-                    <div class="col-12 col-md-6">
-                        <label for="name" class="form-label">Nombre del producto:</label>
-                        <input type="text" id="name" name="name" placeholder="Ej: Zapatillas Reebok" class="form-input"
+
+                <section class="menu">
+
+                    <h2>Edita el producto</h2>
+
+                    <div class="clase1">
+                        <input type="text" id="name" name="name" placeholder="Nuevo nombre" class="casilla"
                             value="<%= product.name %>">
                     </div>
-                    <div class="col-12 col-md-6">
-                        <label for="price" class="form-label">Precio del producto:</label>
-                        <input type="text" id="price" name="price" placeholder="Ej: 5678" class="form-input"
+
+                    <div class="clase1">
+                        <input type="text" id="price" name="price" placeholder="Precio" class="casilla"
                             value="<%= product.price %>">
                     </div>
 
-                    <div class="col-12">
-                        <label for="description" class="form-label">Descripción:</label>
-                        <textarea name="description" id="description"
-                            class="form-input"><%= product.description %></textarea>
+                    <div class="clase1">
+                        <textarea name="description" id="description" class="casilla"
+                            placeholder="Descripción"><%= product.description %></textarea>
                     </div>
-                    <div class="col-12">
-                        <button type="submit" class="buy-now-button">Guardar producto</button>
+
+                    <div class="clase1">
+                        <input class="casilla" type="file" accept=".png,.jpg" name="imagenProducto"
+                            placeholder="Imagen">
                     </div>
-                </div>
+
+                    </div>
+
+                    <button class="boton2" type="submit">Guardar producto</button>
+                </section>
+
             </form>
-        </div>
 
-    </div>
-
-    <!-- <footer>
+    </main>
+    <footer>
         <%- include('partials/footer.ejs') %>
-    </footer> -->
+    </footer>
 
 </body>
 
