@@ -92,5 +92,17 @@
   "Apellido": "prueba 9 abril",
   "email": "l@gmail.com",
   "constrasena": "a"
+ },
+ {
+  "name": "Daniel ",
+  "Apellido": "Garcia",
+  "email": "daniel.garcia@cbr-ingenieria.com.mx",
+  "constrasena": "112233"
+ },
+ {
+  "name": "Enrique",
+  "Apellido": "Carranza",
+  "email": "enrique.carranza@gmail.com",
+  "constrasena": "123456"
  }
 ]
